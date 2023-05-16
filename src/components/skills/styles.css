@@ -1,0 +1,51 @@
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+}
+.skills h1 {
+    width: 100%;
+    margin: auto;
+    font-size: 2rem;
+}
+.skills article {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 70%;
+    margin: auto;
+    font-size: 6rem;
+}
+
+.icons .FontAwesomeIcon:nth-child(1):hover {
+    color: #dd4b25;
+}
+.icons .FontAwesomeIcon:nth-child(2):hover {
+    color: #efd81d;
+}
+.icons .FontAwesomeIcon:nth-child(3):hover {
+    color: #2194f0;
+}
+.icons .FontAwesomeIcon:nth-child(4):hover {
+    color: #c76395;
+}
+.icons .FontAwesomeIcon:nth-child(5):hover {
+    color: #48cef7;
+}
+.icons .FontAwesomeIcon:nth-child(6):hover {
+    color: #c53635;
+}
+.icons .FontAwesomeIcon:nth-child(7):hover {
+    color: #7377ad;
+}
+.icons .FontAwesomeIcon:nth-child(8):hover {
+    color: #f7d34a;
+}
+.icons .FontAwesomeIcon:nth-child(9):hover {
+    color: #8bbf3d;
+}
+
