@@ -3,7 +3,7 @@ import './style.css'
 
 export const NavBar = () => {
   return (
-    <nav className='navbar'>
+    <nav className='navbar' data-scroll-section>
         <ul>
             <li><a href="Home">Home</a></li>
             <li><a href="About">About</a></li>

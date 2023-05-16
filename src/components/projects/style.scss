@@ -1,0 +1,33 @@
+.gallery-wrap {
+    position: relative;
+    background: #bbffa8;
+    margin-left: -5vw;
+    margin-right: -5vw;
+    height: 100vh;
+    .gallery-counter {
+        position: absolute;
+        top: 10%;
+        left: 100px;
+        z-index: 1;
+        mix-blend-mode: difference;
+        line-height: 16px;
+        color: #fff;
+        font-size: 1.6rem;
+        display: inline-block;
+        .divider {
+            content: '';
+            background: #fff;
+            width: 6.25vw;
+            margin: 7px 10px;
+            height: 1px;
+            display: inline-block;
+        }
+    }
+    .gallery {
+        height: 80vh;
+        padding: 10vh 0;
+        width: 400%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}

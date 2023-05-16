@@ -4,7 +4,7 @@ import cartoonMe from '../../img/headerMe.png'
 
 const Header = () => {
   return (
-    <header className='header'>
+    <header className='header' data-scroll-section>
         <article>
             <h1>Nestor David Gomez</h1>
             <h2>Frontend Developer</h2>
