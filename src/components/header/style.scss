@@ -1,0 +1,74 @@
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: radial-gradient(circle, #9fa4a7, #999ea1, #94989a, #8e9294, #898c8e);
+    overflow: hidden;
+    article {
+        position: absolute;
+        top: 26%;
+        left: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 40px;
+        width: 60%;
+        div {
+            display: flex;
+            gap: 5px;
+            width: 80%;
+            font-size: 4rem;
+            padding-left: 12px;
+            margin: 12px 0;
+        }
+        h2 {
+            font-size: 6rem;
+            line-height: 6rem;
+        }
+        h3 {
+            font-size: 2rem;
+            padding-left: 12px;
+            font-weight: 400;
+        }
+        p {
+            padding-left: 12px;
+            font-size: 2rem;
+            margin-top: 12px;
+            font-weight: 100;
+        }
+    }
+    section {
+        display: flex;
+        align-items: flex-end;
+        width: 50%;
+        figure {
+            width: 90%;
+            img {
+                z-index: 10;
+            }
+            &::after{
+                position: absolute;
+                bottom: -1px;
+                left: 0;
+                background: linear-gradient(to top, #9fa4a7, transparent);
+                z-index: 10;
+                content: '';
+                height: 120px;
+                width: 100%;
+            }
+        }
+    }
+    .Marquee {
+        position: absolute;
+        bottom: 12%;
+        left: 0;
+        h1 {
+            font-size: 14rem;
+            line-height: 12rem;
+            font-weight: 100;
+            overflow: hidden;
+        }
+    }
+
+}

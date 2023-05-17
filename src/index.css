@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -8,8 +10,9 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Lexend', sans-serif;
   line-height: 1.5;
+  color: #f9f9f9;
 }
 
 img,
