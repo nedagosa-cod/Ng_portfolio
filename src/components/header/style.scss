@@ -6,8 +6,9 @@
     background-image: radial-gradient(circle, #9fa4a7, #999ea1, #94989a, #8e9294, #898c8e);
     overflow: hidden;
     article {
+        opacity: 0;
         position: absolute;
-        top: 26%;
+        top: 20%;
         left: 40%;
         display: flex;
         flex-direction: column;

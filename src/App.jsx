@@ -7,14 +7,16 @@ import { Projects } from './components/projects/Projects'
 import Contact from './components/contact/Contact'
 import useLocoScroll from './components/hooks/useLocoScroll'
 
+import ContextCompo from './context/useVariables'
+
 
 function App() {
 
-  useLocoScroll()
+  useLocoScroll(true)
 
   return (
-    <>
-      <div className='main-container' id='main-container' data-scroll-container>
+    <ContextCompo>
+      <div className='main-container' id='main-container' data-scroll-container style={{position:'relative'}}>
         <NavBar />
         <Header />
         <About />
@@ -22,7 +24,7 @@ function App() {
         <Projects />
         <Contact />
       </div>
-    </>
+    </ContextCompo>
   )
 }
 

@@ -11,7 +11,7 @@ const Project = ({src, title, build, description, updateActiveVideo, index}) => 
                 <p className='gallery-info-category'>{description}</p>
                 <h4 className='gallery-info-subtitle'>{build}</h4>
             </div>
-            <video className="gallery-item-video">
+            <video className="gallery-item-video" autoPlay={true}>
                 <source src={src}/>
             </video>
         </div>

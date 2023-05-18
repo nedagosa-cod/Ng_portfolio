@@ -1,11 +1,42 @@
-import React from 'react'
-import './styles.css'
+import React, { useEffect, useRef } from 'react'
+import './styles.scss'
+
+import gsap from 'gsap' 
+import { ScrollTrigger } from 'gsap/all'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const About = () => {
+
+  useEffect(() => {
+    let ctx = gsap.context(() => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: '#aboutme',
+          scroller: '#main-container',
+          start: '+=70% bottom',
+          end: '+=700',
+          scrub: 1
+        },
+      });
+      tl.to('.text.one', {
+        x: 200,
+        opacity: 0
+      });
+      tl.to('.text.two', {
+          x: -200,
+          opacity: 0
+        })       
+    });
+    return () => ctx.revert();
+  }, []);
+
+
   return (
-    <section className='about' data-scroll-section>
-        <h1>About Me</h1>
-        <p>I am Néstor Gómez a person passionate about the development and creation of new things, I am motivated every day to be solving logic problems and satisfaction to be able to give them solution, I have 1 year of experience as a junior front end developer and 1 year and 5 months as an empirical developer, I studied graphic design which was the first place where I met the software development, I went through some difficulties and studied business administration which led me to realize that my thing was the development as I always automated administrative processes with programs that created through VBA and today with HTML, CSS, JavaScript and React, I hope to continue learning and give the best of me every day.</p>
+    <section className='about' id='aboutme' data-scroll-section>
+        <h1 className='text one'>THE NEXT</h1>
+        <h1 className='text two'>SECTION IS</h1>
+        <h1 className='text three'>ABOUT ME</h1>
     </section>
   )
 }
