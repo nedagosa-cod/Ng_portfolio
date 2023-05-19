@@ -14,9 +14,9 @@ const About = () => {
         scrollTrigger: {
           trigger: '#aboutme',
           scroller: '#main-container',
-          start: '+=70% bottom',
+          start: '350px bottom',
           end: '+=700',
-          scrub: 1
+          scrub: 2
         },
       });
       tl.to('.text.one', {
@@ -26,14 +26,41 @@ const About = () => {
       tl.to('.text.two', {
           x: -200,
           opacity: 0
-        })       
+        })
+      tl.to('.text.three', {
+        y: 180,
+        scale: 1.5
+      })        
     });
     return () => ctx.revert();
   }, []);
 
+  useEffect(() => {
+    let ctx2 = gsap.context(() => {
+      const tl2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: '.about__blender',
+          scroller: '#main-container',
+          start: '50% bottom',
+          end: '150%',
+          scrub: 2
+        },
+      });
+      tl2.to('.about__blender', {
+        x: '+=-82%'
+      })      
+    });
+      return () => ctx2.revert();
+  },[])
+
 
   return (
     <section className='about' id='aboutme' data-scroll-section>
+        <div className='about__blender'>
+          <div className='blends'></div>
+          <div className='blends'></div>
+          <div className='blends'></div>
+        </div>
         <h1 className='text one'>THE NEXT</h1>
         <h1 className='text two'>SECTION IS</h1>
         <h1 className='text three'>ABOUT ME</h1>
