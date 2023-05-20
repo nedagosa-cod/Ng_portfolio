@@ -8,6 +8,7 @@ import Contact from './components/contact/Contact'
 import useLocoScroll from './components/hooks/useLocoScroll'
 
 import ContextCompo from './context/useVariables'
+import Description from './components/description/Description'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <NavBar />
         <Header />
         <About />
+        <Description />
         <Skills />
         <Projects />
         <Contact />

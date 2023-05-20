@@ -4,7 +4,7 @@ import './style.scss'
 
 export const NavBar = () => {
   return (
-    <nav className='navbar' data-scroll-sectio>
+    <nav className='navbar' data-scroll-section>
       <span>{'<NG>'}</span>
       <ul>
           <li><a href="Home">Home</a></li>

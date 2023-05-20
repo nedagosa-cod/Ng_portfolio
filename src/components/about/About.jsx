@@ -28,7 +28,8 @@ const About = () => {
           opacity: 0
         })
       tl.to('.text.three', {
-        y: 180,
+        y: 135,
+        opacity: 0,
         scale: 1.5
       })        
     });
