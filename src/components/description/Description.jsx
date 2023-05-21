@@ -38,7 +38,6 @@ const Description = () => {
       tl4.to(".back", {
         duration: 4,
         opacity: 0.2,
-        markers: true,
         fontSize: "20rem",
       })
       tl4.to('.description-box', {
@@ -49,6 +48,29 @@ const Description = () => {
           scroller: "#main-container",
           start: "top top",
           end: "+=8000",
+          scrub: 1,
+        }
+      })
+      tl4.to('.skills', {
+        width: '100%',
+        height: '100vh',
+        duration: 4,
+        zIndex: 20,
+        scrollTrigger: {
+          trigger: '.description',
+          scroller: "#main-container",
+          start: "+=50% bottom",
+          end: "+=1000",
+          scrub: 1,
+        }
+      })
+      tl4.to('.skills__back-front', {
+        width: '+=50%',
+        scrollTrigger: {
+          trigger: '.skill',
+          scroller: "#main-container",
+          start: "+=58% bottom",
+          end: "+=1000",
           scrub: 1,
         }
       })
@@ -91,6 +113,9 @@ const Description = () => {
             Moving forward, I am eager to continue expanding my knowledge and
             skills in pursuit of excellence.
           </p>
+        </div>
+        <div className="skills">
+            <div className="skills__back-front"></div>
         </div>
       </article>
     </section>
